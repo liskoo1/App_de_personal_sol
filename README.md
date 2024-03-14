@@ -1,4 +1,4 @@
-Link para ver la aplicacion en Youtube:
+Link para ver la aplicación en Youtube:
 https://youtu.be/1zs5WpNc-Io
 
 App_Asistencias
