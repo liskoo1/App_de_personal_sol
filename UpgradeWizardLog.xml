@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="_UpgradeWizard_Files\UpgradeWizardLog.xslt"?>
+<log>
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\luis_\OneDrive\Escritorio\CURSO DE PROGRAMACION\C#\App_de_personal_sol\App_de_personal\App_de_personal.csproj" />
+  <event action="Analyze" type="Success" name="App_de_personal" path="C:\Users\luis_\OneDrive\Escritorio\CURSO DE PROGRAMACION\C#\App_de_personal_sol\App_de_personal\App_de_personal.csproj" />
+  <event action="Analyze" type="Success" name="App_de_personal_sol" path="C:\Users\luis_\OneDrive\Escritorio\CURSO DE PROGRAMACION\C#\App_de_personal_sol\App_de_personal_sol.sln" />
+</log>

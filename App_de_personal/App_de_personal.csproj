@@ -1,0 +1,121 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationManifest>app_tienda.manifest</ApplicationManifest>
+    <ApplicationIcon>Resource\favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resource\actualizar-base-de-datos.png" />
+    <None Remove="Resource\agregar-usuario.png" />
+    <None Remove="Resource\agregar.png" />
+    <None Remove="Resource\alerta.png" />
+    <None Remove="Resource\archivo.png" />
+    <None Remove="Resource\atras.png" />
+    <None Remove="Resource\busqueda.png" />
+    <None Remove="Resource\cargando.gif" />
+    <None Remove="Resource\compras.png" />
+    <None Remove="Resource\empleado.png" />
+    <None Remove="Resource\estacion-de-tren.png" />
+    <None Remove="Resource\exportar.png" />
+    <None Remove="Resource\factura.png" />
+    <None Remove="Resource\nota.png" />
+    <None Remove="Resource\regalo.png" />
+    <None Remove="Resource\respaldo.png" />
+    <None Remove="Resource\search-engine-optimization.png" />
+    <None Remove="Resource\space.png" />
+    <None Remove="Resource\trabajo-en-equipo.png" />
+    <None Remove="Resource\trabajo-en-progreso.png" />
+    <None Remove="Windows\cargando.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resource\actualizar-base-de-datos.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Resource\agregar-usuario.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\agregar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\alerta.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\archivo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\atras.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\busqueda.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\cargando.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\compras.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\empleado.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\estacion-de-tren.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\exportar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\factura.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\favicon.ico" />
+    <Content Include="Resource\nota.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\regalo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\respaldo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\search-engine-optimization.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\space.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\trabajo-en-equipo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\trabajo-en-progreso.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EPPlus" Version="7.0.9" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.5" />
+    <PackageReference Include="SqlConnection" Version="1.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="STPadLibNet">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\signotec\signoPAD-API\Samples\C#.NET (WPF)\Binary\STPadLibNetDemoApp\STPadLibNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Windows\cargando.gif" />
+  </ItemGroup>
+
+</Project>

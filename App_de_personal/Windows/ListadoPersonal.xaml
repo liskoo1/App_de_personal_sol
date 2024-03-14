@@ -1,0 +1,73 @@
+﻿<UserControl x:Class="App_de_personal.Windows.ListadoPersonal"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:App_de_personal.Windows"
+             mc:Ignorable="d" d:DesignWidth="800" Loaded="UserControl_Loaded" Height="629">
+    <Grid>
+        <DataGrid x:Name="dataListadoPersonal" d:ItemsSource="{d:SampleData ItemCount=5}" Visibility="Visible" Background="#FF1F1F1F" FontSize="18" FontFamily="Consolas" Height="300" Margin="0,0,0,329" BorderThickness="0,0,0,0" >
+            <DataGrid.Resources>
+                <Style TargetType="{x:Type DataGridRowHeader}">
+                    <Setter Property="Background" Value="#FF1F1F1F"/>
+                    <Setter Property="Foreground" Value="White"/>
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.RowStyle>
+                <Style TargetType="{x:Type DataGridRow}">
+                    <Setter Property="Background" Value="#FF1F1F1F"/>
+                    <Setter Property="Foreground" Value="White"/>
+                </Style>
+            </DataGrid.RowStyle>
+            <DataGrid.CellStyle >
+                <Style  TargetType="{x:Type DataGridCell}">
+                    <Setter Property="Background" Value="#FF1F1F1F"/>
+                    <Setter Property="Foreground" Value="White"/>
+                </Style>
+            </DataGrid.CellStyle>
+            <DataGrid.ColumnHeaderStyle>
+                <Style TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Background" Value="#FF1F1F1F"/>
+                    <Setter Property="Foreground" Value="White"/>
+                </Style>
+            </DataGrid.ColumnHeaderStyle>
+        </DataGrid>
+        <DataGrid x:Name="dataListadoCargo" d:ItemsSource="{d:SampleData ItemCount=5}" Visibility="Visible" Background="#FF1F1F1F" FontSize="18" FontFamily="Consolas" Margin="224,315,224,178" BorderThickness="0,0,0,0" ScrollViewer.CanContentScroll="False" MaxHeight="350" MinColumnWidth="130" Width="400" >
+            <DataGrid.Resources>
+                <Style TargetType="{x:Type DataGridRowHeader}">
+                    <Setter Property="Background" Value="#FF1F1F1F"/>
+                    <Setter Property="Foreground" Value="White"/>
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.RowStyle>
+                <Style TargetType="{x:Type DataGridRow}">
+                    <Setter Property="Background" Value="#FF1F1F1F"/>
+                    <Setter Property="Foreground" Value="White"/>
+                </Style>
+            </DataGrid.RowStyle>
+            <DataGrid.CellStyle >
+                <Style  TargetType="{x:Type DataGridCell}">
+                    <Setter Property="Background" Value="#FF1F1F1F"/>
+                    <Setter Property="Foreground" Value="White"/>
+                </Style>
+            </DataGrid.CellStyle>
+            <DataGrid.ColumnHeaderStyle>
+                <Style TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Background" Value="#FF1F1F1F"/>
+                    <Setter Property="Foreground" Value="White"/>
+                </Style>
+            </DataGrid.ColumnHeaderStyle>
+        </DataGrid>
+        <StackPanel Height="73" RenderTransformOrigin="0.5,0.5" Orientation="Horizontal" HorizontalAlignment="Left" Margin="256,446,0,110">
+
+            <Button x:Name="btnActualizar" Content="Actualizar" Width="74" Padding="1,0,1,1" Background="#FFA6E8A1" FontFamily="Consolas" RenderTransformOrigin="0.32,2.609" Click="btnActualizar_Click" Height="30" Margin="0,0,25,0"/>
+            <Button x:Name="btnEliminar" Content="Eliminar" Width="74" Padding="1,0,1,1" Background="#FFA6E8A1" FontFamily="Consolas" RenderTransformOrigin="0.32,2.609" Click="btnEliminar_Click" Height="30"/>
+            <Button x:Name="btnActualizarCargo" Content="Actualizar Cargo" Width="114" Padding="1,0,1,1" Background="#FFA6E8A1" FontFamily="Consolas" RenderTransformOrigin="0.32,2.609" Click="btnActualizarCargo_Click" Height="30" Margin="25,0,0,0"/>
+
+        </StackPanel>
+        <TextBox HorizontalAlignment="Left" Margin="596,456,0,0" TextWrapping="Wrap" Text="Para cambiar el cargo  de un empleado primero selecciona el empleado y a continuación el cargo" VerticalAlignment="Top" Width="172" Height="93" Background="#FF1F1F1F" Foreground="#FFEA7676" BorderThickness="0,0,0,0"/>
+    </Grid>
+
+
+
+</UserControl>
